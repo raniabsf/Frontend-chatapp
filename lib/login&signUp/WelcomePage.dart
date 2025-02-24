@@ -11,7 +11,6 @@ class Welcomepage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Yakko title
               Text.rich(
                 TextSpan(
                   children: [
@@ -33,10 +32,8 @@ class Welcomepage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-
-              // Avatars Stack
               SizedBox(
-                height: 300, // Adjust height for better responsiveness
+                height: 300,
                 width: 300,
                 child: Stack(
                   clipBehavior: Clip.none,
@@ -75,7 +72,6 @@ class Welcomepage extends StatelessWidget {
 
               SizedBox(height: 30),
 
-              // "Chat and make new friends" text
               Text(
                 "Chat and make\n   new Friends",
                 textAlign: TextAlign.center,
@@ -88,7 +84,6 @@ class Welcomepage extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              // Buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -159,6 +154,6 @@ Widget _buildAvatar(String imagePath, double radius) {
   return CircleAvatar(
     radius: radius,
     backgroundImage: AssetImage(imagePath),
-    backgroundColor: Colors.grey.shade300, // Placeholder color
+    backgroundColor: Colors.grey.shade300, 
   );
 }
