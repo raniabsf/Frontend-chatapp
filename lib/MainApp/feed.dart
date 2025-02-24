@@ -308,7 +308,7 @@ class InvCards extends StatelessWidget {
           Column(
             children: [
               Text(
-                "wants to chat with you ",
+                "${Invs.InvName} wants to chat with you ",
                 style: TextStyle(
                     color: Colors.black,
                     fontFamily: "Afacad",
